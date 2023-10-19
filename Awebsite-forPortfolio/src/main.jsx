@@ -6,6 +6,9 @@ import Layout from './layout'
 import Home from './components/home/Home'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
+import User from './components/users/User'
+import Github from './components/github/Github'
+
 
 const myrouter = createBrowserRouter([{
   path: '/',
@@ -25,6 +28,15 @@ const myrouter = createBrowserRouter([{
     {
       path: "contact",
       element: <Contact />
+    
+    },
+    {
+      path: "user/:id",
+      element: <User />
+    },
+    {
+      path: "github",
+      element: <Github />
     
     }
   ]
